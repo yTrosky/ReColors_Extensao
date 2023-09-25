@@ -1,0 +1,115 @@
+/* popup styles */
+body {
+  font-size: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(0, 0, 0);
+  width: 410px;
+  height: 100%;
+  background-color: #fcf8f8;
+}
+
+.rgbinput {
+  width: 25px;
+}
+
+.hexinput {
+  width: 50px;
+  margin-left: 4px;
+}
+
+#color-background {
+  width: 100px;
+  background-color: rgb(52, 124, 124);
+  margin-top: 250px;
+}
+
+.corner-button {
+  top: calc(100vh - 40px);
+  right: 10px;
+  position: fixed;
+  margin: 0;
+}
+
+.corner-button:hover {
+  opacity: 90%;
+}
+
+#Colorblind-Picker form {
+  padding: 20px;
+}
+
+/* radio button styles */
+
+.checkbox-custom,
+.radio-custom {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-custom,
+.checkbox-custom-label,
+.radio-custom,
+.radio-custom-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.checkbox-custom-label,
+.radio-custom-label {
+  position: relative;
+}
+
+.checkbox-custom+.checkbox-custom-label:before,
+.radio-custom+.radio-custom-label:before {
+  content: '';
+  background: #fff;
+  border: 2px solid rgb(95, 88, 88);
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.checkbox-custom:checked+.checkbox-custom-label:before {
+  background: rebeccapurple;
+}
+
+.radio-custom+.radio-custom-label:before {
+  border-radius: 50%;
+}
+
+.radio-custom:checked+.radio-custom-label:before {
+  background: #910ab3;
+}
+
+#rainbow {
+  background: red;
+  background: linear-gradient(to right,
+      rgb(194, 103, 194),
+      orange,
+      rgb(31, 204, 54),
+      rgb(28, 172, 255),
+      rgb(10, 99, 10),
+      blue);
+  font-size: 3em;
+  color: white;
+  text-shadow: 2px 2px rgb(54, 54, 54);
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 15px;
+}
+
+
+form div:hover {
+  background-color: rgb(230, 230, 230)
+}
+
+form div {
+  border-radius: 10px;
+}

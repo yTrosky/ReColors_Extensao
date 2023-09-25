@@ -1,0 +1,60 @@
+{
+   "manifest_version": 3,
+   "name": "ReColors",
+   "version": "1.0",
+   "description": "recolors",
+   "host_permissions": [
+      "*://*.youtube.com/*"
+   ],
+   "optional_host_permissions": [
+      "https://*/*",
+      "http://*/*"
+   ],
+   "content_scripts": [
+      {
+         "matches": [
+            "*://*/*"
+         ],
+         "run_at": "document_end", 
+         "js":[
+            "script/colorblindListener.js"
+         ]
+      }
+   ],
+   "web_accessible_resources": [
+      {
+         "resources": [
+            "images/*"
+         ],
+         "matches": [
+            "<all_urls>"
+         ]
+      }
+   ],
+   "action": {
+      "default_popup": "popup/popup.html",
+      "default_icon":  "icon.png"
+   },
+
+   "icons": {
+      "128": "icon.png",
+      "48": "icon.png",
+      "16": "icon.png"
+   },
+   
+   "permissions": [
+      "scripting",
+      "contextMenus",
+      "tabs",
+      "activeTab",
+      "storage",
+      "unlimitedStorage",
+      "webRequest",
+      "declarativeContent",
+      "alarms",
+      "cookies"
+   ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
