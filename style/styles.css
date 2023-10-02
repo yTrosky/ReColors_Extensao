@@ -1,11 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+
+
 /* popup styles */
+
+
+
 body {
-  font-size: 100%;
+  font-size: 150%;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: rgb(0, 0, 0);
   width: 410px;
   height: 100%;
+  font-weight: 500;
   background-color: #fcf8f8;
 }
 
@@ -55,6 +63,7 @@ body {
   vertical-align: middle;
   margin: 5px;
   cursor: pointer;
+  
 }
 
 .checkbox-custom-label,
@@ -66,14 +75,15 @@ body {
 .radio-custom+.radio-custom-label:before {
   content: '';
   background: #fff;
-  border: 2px solid rgb(95, 88, 88);
+  border: 3px solid rgb(95, 88, 88);
   display: inline-block;
   vertical-align: middle;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
+  width: 25px;
+  height: 25px;
+  padding: 3px;
   margin-right: 10px;
   text-align: center;
+  transition: all 0.5s ease;
 }
 
 .checkbox-custom:checked+.checkbox-custom-label:before {
@@ -85,7 +95,7 @@ body {
 }
 
 .radio-custom:checked+.radio-custom-label:before {
-  background: #910ab3;
+  background: #3E2CD6;
 }
 
 #rainbow {
@@ -107,9 +117,10 @@ body {
 
 
 form div:hover {
-  background-color: rgb(230, 230, 230)
+  background-color: rgb(230, 230, 230);
+  
 }
 
 form div {
-  border-radius: 10px;
+  border-radius: 20px;
 }
