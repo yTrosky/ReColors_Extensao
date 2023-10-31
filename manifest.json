@@ -1,15 +1,8 @@
 {
    "manifest_version": 3,
    "name": "ReColors",
-   "version": "1.0",
-   "description": "recolors",
-   "host_permissions": [
-      "*://*.youtube.com/*"
-   ],
-   "optional_host_permissions": [
-      "https://*/*",
-      "http://*/*"
-   ],
+   "version": "1.6",
+   "description": "Aplique um filtro de cores nos seus sites favoritos com o ReColors!",
    "content_scripts": [
       {
          "matches": [
@@ -45,15 +38,8 @@
    
    "permissions": [
       "scripting",
-      "contextMenus",
-      "tabs",
       "activeTab",
-      "storage",
-      "unlimitedStorage",
-      "webRequest",
-      "declarativeContent",
-      "alarms",
-      "cookies"
+      "storage"
    ],
    "content_security_policy": {
       "extension_pages": "script-src 'self'; object-src 'self'"
